@@ -1,0 +1,66 @@
+<!-- Navigation -->
+<nav class="navbar navbar-default">
+	<a class="navbar-brand" href="index.html">First App</a>
+   	<div class="container-fluid">
+       <ul class="nav navbar-nav">
+           <li class="active"><a href="#">
+             Home <span class="sr-only">(current)</span>
+           </a></li>
+           <li><a href="#">Posts</a></li>
+           <li><a href="#">Directives</a></li>
+           <li><a href="#">Pipes</a></li>
+       </ul>
+   	</div>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="wrapper">
+	  <div class="row">
+	  	<div class="col-md-12">
+			{{title}}
+			<br /><input type="text" name="inputBox" [(ngModel)]="inputBox">
+			<br /><br /><br />
+			{{inputBox}}
+		</div>
+	  </div>
+	</div>
+</div>
+
+<hr>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          <li class="list-inline-item">
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

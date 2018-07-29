@@ -1,0 +1,16 @@
+<div class="col-lg-8 col-md-10 mx-auto">
+  <div class="post-preview">
+    <a href="post.html">
+      <h2 class="post-title">
+        {{title}}
+      </h2>
+    </a>
+    <h4 class="post-description">
+      {{description}}
+    </h4>
+    <button href="#" (click)="showImage = !showImage;">{{ showImage ? 'Hide Image': 'Show Image' }}</button>
+    <div *ngIf="showImage" class="panel panel-default">
+      <img [src]="post_img">
+    </div>
+  </div>
+</div>

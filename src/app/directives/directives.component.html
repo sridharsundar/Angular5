@@ -1,0 +1,12 @@
+<div class="col-lg-12 col-md-10 mx-auto">
+  <h1>{{title}}</h1>
+
+  <input [(ngModel)]="numb" />
+
+  <div *ngFor="let input of input_numb">
+    <div [ngSwitch]="input %2">
+      <h1 *ngSwitchCase="0" [ngClass]="'redClass'">{{input}} is Even Number</h1>
+      <h1 *ngSwitchCase="1" [ngClass]="'yellowClass'">{{input}} is Odd Number</h1>
+    </div>
+  </div>
+</div>

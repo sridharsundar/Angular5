@@ -1,0 +1,11 @@
+<div class="col-lg-12 col-md-10 mx-auto">
+	<h1>{{title}}</h1>
+
+	<br />
+	Book Name : {{bookName | limitchar : 5}} <br />
+	Author : {{bookAuthor}} <br />
+	Price : {{bookPrice | currency:'USD'}} <br />
+	Discount : {{discount | percent}} <br />
+	Published On : {{publishedOn | date: 'longDate' | uppercase}} <br />
+	InStock : {{inStock | uppercase}}
+</div>
